@@ -1,0 +1,22 @@
+
+<div class="container">
+    <div class="row mt-5 justify-content-center">
+        <div class="col-sm-12 col-lg-2">
+            <img width="100px" heigth="100px" src="assets/logo.png" alt="imagen">
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <input type="text" class="form-control" placeholder="Ingrese ciudad..." [(ngModel)]="ciudad">
+            <div class="d-grid">
+                <button (click)="mostrarClima()" class="btn btn-primary mt-1">Buscar</button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 justify-content-center">
+    <div class="card text-white bg-primary mb-3" style="max-width: 500px;">
+        <p>Temperatura:{{temperatura}} °C </p>
+        <p>Temperatura max:{{temperaturaMax}}°C</p>
+        <p>Temperatura min:{{temperaturaMin}}°C</p>
+        <p>Humedad:{{humedad}}%</p>
+        
+    </div>
+</div>
